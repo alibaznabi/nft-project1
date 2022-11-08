@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="bannerimg" src="./image/fata5.jpg" alt=""><br>
+    <button onclick="ChangeImage('./fata6.jpg')">changeimage1</button>
+    <button onclick="ChangeImage('fata8.jpg')">changeimage2</button>
+    <button onclick="ChangeImage('fata6.jpg')">changeimage3</button>
+    <button onclick="ChangeImage('fata7.jpg')">changeimage4</button>
+
+    <script>
+        function ChangeImage(fileName){
+        let img = document.querySelector("#banner");
+        img.setAttribute('src',fileName);
+        }
+    </script>
+
+</body>
+</html>
